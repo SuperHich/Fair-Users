@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fair Users</string>
+    <string name="empty_list">No users found!</string>
+    <string name="an_error_occurred">An error occurred</string>
+</resources>
