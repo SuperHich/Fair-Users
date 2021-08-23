@@ -4,10 +4,11 @@ import android.app.Application
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.superhapp.fairusers.data.ResultCallback
-import com.superhapp.fairusers.model.User
-import com.superhapp.fairusers.model.UserDetailsDataSource
-import com.superhapp.fairusers.model.UserDetailsRepository
-import com.superhapp.fairusers.viewmodel.UserDetailsViewModel
+import com.superhapp.fairusers.view.model.User as ModelUser
+import com.superhapp.fairusers.data.model.User
+import com.superhapp.fairusers.data.datasource.UserDetailsDataSource
+import com.superhapp.fairusers.data.repository.UserDetailsRepository
+import com.superhapp.fairusers.view.viewmodel.UserDetailsViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestCoroutineDispatcher
@@ -38,7 +39,7 @@ class UserDetailsViewModelTest {
     private lateinit var repository: UserDetailsRepository
 
     private lateinit var onMessageErrorObserver: Observer<Any>
-    private lateinit var onRenderUserObserver: Observer<User>
+    private lateinit var onRenderUserObserver: Observer<ModelUser>
 
     private lateinit var userDetails: User
 
@@ -107,7 +108,7 @@ class UserDetailsViewModelTest {
 
     private fun setupObservers() {
         onMessageErrorObserver = mock(Observer::class.java) as Observer<Any>
-        onRenderUserObserver = mock(Observer::class.java) as Observer<User>
+        onRenderUserObserver = mock(Observer::class.java) as Observer<ModelUser>
     }
 
     private fun mockData() {

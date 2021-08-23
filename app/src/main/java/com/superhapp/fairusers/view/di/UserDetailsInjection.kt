@@ -1,12 +1,12 @@
-package com.superhapp.fairusers.di
+package com.superhapp.fairusers.view.di
 
 import android.content.Context
 import androidx.lifecycle.ViewModelProvider
 import com.superhapp.fairusers.data.remote.ApiClient
 import com.superhapp.fairusers.data.remote.UserDetailsRemoteDataSource
-import com.superhapp.fairusers.model.UserDetailsDataSource
-import com.superhapp.fairusers.model.UserDetailsRepository
-import com.superhapp.fairusers.viewmodel.UserDetailsViewModelFactory
+import com.superhapp.fairusers.data.datasource.UserDetailsDataSource
+import com.superhapp.fairusers.data.repository.UserDetailsRepository
+import com.superhapp.fairusers.view.viewmodel.UserDetailsViewModelFactory
 
 object UserDetailsInjection {
 

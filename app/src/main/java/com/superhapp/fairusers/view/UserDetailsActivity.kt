@@ -8,9 +8,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.squareup.picasso.Picasso
 import com.superhapp.fairusers.R
-import com.superhapp.fairusers.di.UserDetailsInjection
-import com.superhapp.fairusers.model.User
-import com.superhapp.fairusers.viewmodel.UserDetailsViewModel
+import com.superhapp.fairusers.view.di.UserDetailsInjection
+import com.superhapp.fairusers.view.model.User
+import com.superhapp.fairusers.view.viewmodel.UserDetailsViewModel
 import kotlinx.android.synthetic.main.activity_user_details.*
 import kotlinx.android.synthetic.main.layout_error.*
 

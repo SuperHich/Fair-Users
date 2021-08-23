@@ -1,12 +1,12 @@
-package com.superhapp.fairusers.di
+package com.superhapp.fairusers.view.di
 
 import android.content.Context
 import androidx.lifecycle.ViewModelProvider
 import com.superhapp.fairusers.data.remote.ApiClient
 import com.superhapp.fairusers.data.remote.UsersRemoteDataSource
-import com.superhapp.fairusers.model.UsersDataSource
-import com.superhapp.fairusers.model.UsersRepository
-import com.superhapp.fairusers.viewmodel.UsersViewModelFactory
+import com.superhapp.fairusers.data.datasource.UsersDataSource
+import com.superhapp.fairusers.data.repository.UsersRepository
+import com.superhapp.fairusers.view.viewmodel.UsersViewModelFactory
 
 object UsersInjection {
 

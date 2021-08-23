@@ -1,11 +1,10 @@
-package com.superhapp.fairusers.viewmodel
+package com.superhapp.fairusers.view.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.superhapp.fairusers.model.UsersRepository
-import javax.inject.Inject
+import com.superhapp.fairusers.data.repository.UsersRepository
 
-class UsersViewModelFactory @Inject constructor(private val repository: UsersRepository): ViewModelProvider.Factory {
+class UsersViewModelFactory constructor(private val repository: UsersRepository): ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return if (modelClass.isAssignableFrom(UsersViewModel::class.java)) {

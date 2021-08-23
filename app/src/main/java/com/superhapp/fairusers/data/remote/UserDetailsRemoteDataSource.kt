@@ -1,8 +1,8 @@
 package com.superhapp.fairusers.data.remote
 
 import com.superhapp.fairusers.data.ResultCallback
-import com.superhapp.fairusers.model.User
-import com.superhapp.fairusers.model.UserDetailsDataSource
+import com.superhapp.fairusers.data.model.User
+import com.superhapp.fairusers.data.datasource.UserDetailsDataSource
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

@@ -1,6 +1,5 @@
-package com.superhapp.fairusers.data
+package com.superhapp.fairusers.data.model
 
-import com.superhapp.fairusers.model.User
 import java.io.Serializable
 
 data class UsersResponse(

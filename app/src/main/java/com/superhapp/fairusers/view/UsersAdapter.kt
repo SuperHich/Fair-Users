@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.superhapp.fairusers.R
-import com.superhapp.fairusers.model.User
+import com.superhapp.fairusers.view.model.User
 import kotlinx.android.synthetic.main.item_user.view.*
 
 class UsersAdapter(

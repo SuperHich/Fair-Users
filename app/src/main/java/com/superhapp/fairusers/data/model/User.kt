@@ -1,4 +1,4 @@
-package com.superhapp.fairusers.model
+package com.superhapp.fairusers.data.model
 
 import java.io.Serializable
 import java.util.*
@@ -16,12 +16,4 @@ data class User(
     val phone: String?,
     val registerDate: Date?,
     val updatedAt: Date?
-) : Serializable
-
-data class Location(
-    val city: String,
-    val country: String,
-    val state: String,
-    val street: String,
-    val timezone: String
 ) : Serializable

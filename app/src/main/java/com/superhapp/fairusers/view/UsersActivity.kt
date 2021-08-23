@@ -9,9 +9,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.superhapp.fairusers.R
-import com.superhapp.fairusers.di.UsersInjection
-import com.superhapp.fairusers.model.User
-import com.superhapp.fairusers.viewmodel.UsersViewModel
+import com.superhapp.fairusers.view.di.UsersInjection
+import com.superhapp.fairusers.view.model.User
+import com.superhapp.fairusers.view.viewmodel.UsersViewModel
 import kotlinx.android.synthetic.main.activity_users.*
 import kotlinx.android.synthetic.main.layout_error.*
 

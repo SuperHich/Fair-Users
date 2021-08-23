@@ -1,6 +1,8 @@
-package com.superhapp.fairusers.model
+package com.superhapp.fairusers.data.repository
 
 import com.superhapp.fairusers.data.ResultCallback
+import com.superhapp.fairusers.data.model.User
+import com.superhapp.fairusers.data.datasource.UsersDataSource
 
 class UsersRepository(private val usersDataSource: UsersDataSource) {
 
