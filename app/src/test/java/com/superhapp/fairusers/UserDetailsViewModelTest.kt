@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.superhapp.fairusers.data.ResultCallback
-import com.superhapp.fairusers.view.model.User as ModelUser
+import com.superhapp.fairusers.view.model.User as ViewUser
 import com.superhapp.fairusers.data.model.User
 import com.superhapp.fairusers.data.datasource.UserDetailsDataSource
 import com.superhapp.fairusers.data.repository.UserDetailsRepository
@@ -39,7 +39,7 @@ class UserDetailsViewModelTest {
     private lateinit var repository: UserDetailsRepository
 
     private lateinit var onMessageErrorObserver: Observer<Any>
-    private lateinit var onRenderUserObserver: Observer<ModelUser>
+    private lateinit var onRenderUserObserver: Observer<ViewUser>
 
     private lateinit var userDetails: User
 
@@ -108,7 +108,7 @@ class UserDetailsViewModelTest {
 
     private fun setupObservers() {
         onMessageErrorObserver = mock(Observer::class.java) as Observer<Any>
-        onRenderUserObserver = mock(Observer::class.java) as Observer<ModelUser>
+        onRenderUserObserver = mock(Observer::class.java) as Observer<ViewUser>
     }
 
     private fun mockData() {
